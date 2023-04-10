@@ -34,8 +34,17 @@ img {
     
   }
 
-#todo-list {
-    text-align : center;
+#todo-list, li {
+    max-width: 250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 12px;
     list-style: none;
   }
 
