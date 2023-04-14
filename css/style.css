@@ -14,7 +14,8 @@ img {
   }
 
 #clock {
-    margin-top: 15%;
+    padding-top: 7%;
+    margin-top: 0px;
     margin-bottom: 10px;
     text-align: center;
     font-size: 70px;
@@ -34,18 +35,47 @@ img {
     
   }
 
-#todo-list, li {
-    max-width: 250px;
+#todo-list {
+    max-width: 260px;
+    max-height: 310px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: whitesmoke;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  #todo-list::-webkit-scrollbar{
+    width: 10px;
+  }
+
+  #todo-list::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.308);
+    border-radius: 15px;
+  }
+
+  #todo-list.button{
+    text-align: right;
+  }
+  
+  li {
+    max-width: 230px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid #efefef;
     font-size: 12px;
     list-style: none;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
   }
 
 #quote {
@@ -54,6 +84,12 @@ img {
   }
 
 #weather {
-    text-align : center;
+    width: 170px;
+    text-align: center;
+    right: 1%;
     color: whitesmoke;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 15px;
   }
+
