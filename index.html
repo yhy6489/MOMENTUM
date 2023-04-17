@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <title>Momemtum APP</title>
 </head>
+
 <body>
-    <div id ="weather">
+    <!-- 날씨-->
+    <div id="weather">
         <span></span>
         <span></span>
     </div>
-    <form id ="login-form" class="hidden">
+    <!-- 로그인-->
+    <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="Wha is your name?" />
         <input type="submit" value="Log In" />
     </form>
+    <!-- 시간-->
     <h2 id="clock">00:00</h2>
+    <!-- 이름-->
     <h1 id="greeting" class="hidden"></h1>
+    <!-- ToDo-->
     <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" required />
     </form>
     <ul id="todo-list"></ul>
+    <!-- 명언-->
     <div id="quote">
         <span></span>
         <span></span>
     </div>
-    
-    <script src="js/greetings.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/backgrounf.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weatherkey.js"></script>
-    <script src="js/weather.js"></script>
-    
+
+    <!-- + 메뉴 (깃허브, 블로그)-->
+    <input type="checkbox" id="menu1">
+    <label for="menu1">
+        <div id="plus"></div>
+    </label>
+    <div id="link">
+        <a class="linka" href="https://github.com/yhy6489/MOMENTUM">
+            <img class="menuimg"src="C:\Users\Default\Documents\MOMENTUM\img\git.png"></a>
+        <a class="linka" href="https://sheephong.tistory.com/">
+            <img class="menuimg"src="C:\Users\Default\Documents\MOMENTUM\img\tistory.png"></a>
+    </div>
 </body>
+<script src="js/greetings.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/backgrounf.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weatherkey.js"></script>
+<script src="js/weather.js"></script>
+
+</body>
+
 </html>
