@@ -7,20 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/wave.css">
     <title>Momemtum APP</title>
 </head>
 
 <body>
+    <!--로그인 화면 상단-->
+    <div class="top_area">
+        <form id="login-form" class="hidden">
+            <input class="login" required maxlength="15" type="text" placeholder="What is your name?" />
+            <input class="loginbtn" type="submit" value="Log In" />
+        </form>
+        <div class="window_area">
+            <img class="winimg blur" src="./img/dog.png">
+            <img class="winimg" src="./img/dog.png">
+            <div class="window">
+                <div class="wave-one"></div>
+                <div class="wave-two"></div>
+                <div class="wave-three"></div>
+                <div class="wave-four"></div>
+            </div>
+        </div>
+    </div>
     <!-- 날씨-->
     <div id="weather">
         <span></span>
         <span></span>
     </div>
-    <!-- 로그인-->
+    <!-- 로그인
     <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="Wha is your name?" />
         <input type="submit" value="Log In" />
-    </form>
+    </form> -->
     <!-- 시간-->
     <h2 id="clock">00:00</h2>
     <!-- 이름-->
@@ -46,6 +64,21 @@
             <img class="menuimg" src="./img/git.png"></a>
         <a class="linka" href="https://sheephong.tistory.com/">
             <img class="menuimg" src="./img/tistory.png"></a>
+    </div>
+
+    <!--로그인 화면 하단-->
+    <div class="bottom_area">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(75,123,236,0.7"/>
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(56,103,214,0.5)"/>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(165,94,234,0.3)"/>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(136,84,208)"/>
+            </g>
+        </svg>
     </div>
 </body>
 <script src="js/greetings.js"></script>

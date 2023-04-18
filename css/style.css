@@ -35,9 +35,21 @@
 
 }
 
+.loginbtn{
+  position: absolute;
+  top: 33%;
+  right: 4%;
+  border: none;;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: white;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  border-radius: 10px;
+}
 
-
-input[type=text] {
+#todoin{
   width: 400px;
   height: 35px;
   background: rgba(255, 255, 255, 0.5);
@@ -95,7 +107,7 @@ li {
 }
 
 #weather {
-  width: 170px;
+  width: 190px;
   text-align: center;
   right: 1%;
   color: whitesmoke;

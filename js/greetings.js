@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const toparea = document.querySelector(".top_area");
+const bottomarea = document.querySelector(".bottom_area");
 
 const HIDDEN_CLASSNAME ="hidden";
 const USER_KEY ="username";
@@ -16,6 +18,8 @@ function onLoginSubmit(event){
 }   
 
 function paintGreeting(username){
+    toparea.style.top = `${-50}%`;
+    bottomarea.style.bottom = `${-50}%`;
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }

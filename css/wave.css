@@ -1,0 +1,190 @@
+.up {
+    top: 50px;
+}
+
+.down {
+    bottom: -50%;
+}
+
+#login-form {
+    position: relative;
+    top: 50%;
+    left: 28%;
+    width: 450px;
+    height: 45px;
+}
+
+.login {
+    width: 341px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 65px;
+    border: 1px solid #dddddd;
+    outline: none;
+    font-size: 26pt;
+    text-align: center;
+}
+
+.top_area {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    top: 0%;
+    left: 0px;
+    background: linear-gradient(to bottom, #355c7d, #6C5B7B);
+    transition: all .5s;
+}
+
+.winimg {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: 26%;
+    animation: dog-rotation 4s infinite linear;
+
+}
+
+.blur {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+@keyframes dog-rotation {
+
+    0%, 100%{
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+    
+}
+
+.window_area {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 17%;
+    left: 7%;
+}
+
+.window {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border: 7px solid #464343;
+    border-radius: 100%;
+    background: linear-gradient(#3c5aff, #52f2fd);
+    transform: translate3d(0, 0, 0);
+}
+
+.wave-one {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -45%;
+    left: -17%;
+    border-radius: 45%;
+    background: rgba(3, 169, 244, 0.8);
+    animation: move 3s infinite linear;
+}
+
+.wave-two {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -70%;
+    left: -17%;
+    border-radius: 45%;
+    background: rgba(34, 79, 242, 0.8);
+    animation: move 5s infinite linear;
+}
+
+.wave-three {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -77%;
+    left: -30%;
+    border-radius: 45%;
+    background: #1d074b;
+    border: 6px solid rgba(131, 119, 152, 0.7);
+    animation: move 7s infinite linear;
+}
+
+.wave-four {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -77%;
+    left: -30%;
+    border-radius: 46%;
+    background: linear-gradient(rgba(252, 251, 232, 0.1) 10%, transparent);
+    animation: move 7s infinite linear;
+}
+
+@keyframes move {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bottom_area {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    bottom: 0%;
+    left: 0px;
+    background: linear-gradient(to bottom, #6C5B7B, #C06C84);
+    transition: all .5s;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    bottom: -70%;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+/* Animation */
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(0.55, .5, 0.45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
